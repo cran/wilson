@@ -1,4 +1,6 @@
 # WIlsON: Webbased Interactive Omics visualizatioN -  The R Package
+[![CRAN](https://www.r-pkg.org/badges/version/wilson)](https://cran.r-project.org/package=wilson)
+
 *Buildkite:* ![Build status](https://badge.buildkite.com/d79f55bb3e3cf0d70d6784feb8c6e26182d602f534e74fac4e.svg?branch=master)
 
 ## Abstract
@@ -40,7 +42,7 @@ CLARION is a data format especially developed to be used with WIlsON, which reli
 Please check the following link for details considering the [CLARION format](https://github.molgen.mpg.de/loosolab/wilson-apps/wiki/CLARION-Format/).
 
 ## How to cite
-*Schultheis H, Kuenne C, Preussner J, Wiegandt R, Fust A, Bentsen M, Looso M*. WIlsON: Webbased Interactive Omics VisualizatioN. (2018), doi: https://XY
+*Schultheis H, Kuenne C, Preussner J, Wiegandt R, Fust A, Bentsen M, Looso M*. WIlsON: Webbased Interactive Omics VisualizatioN. (2018), doi: https://doi.org/10.1093/bioinformatics/bty711
 
 ## License
 This project is licensed under the MIT license.
