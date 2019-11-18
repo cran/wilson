@@ -1,7 +1,7 @@
 # WIlsON: Webbased Interactive Omics visualizatioN -  The R Package
 [![CRAN](https://www.r-pkg.org/badges/version/wilson)](https://cran.r-project.org/package=wilson)
 
-*Buildkite:* ![Build status](https://badge.buildkite.com/d79f55bb3e3cf0d70d6784feb8c6e26182d602f534e74fac4e.svg?branch=master)
+[![pipeline status](https://gitlab.gwdg.de/loosolab/software/wilson/badges/master/pipeline.svg)](https://gitlab.gwdg.de/loosolab/software/wilson/commits/master)
 
 ## Abstract
 #### Objective
@@ -29,9 +29,13 @@ Visualizations are organized hierarchically as Shiny modules, such that larger v
 The module source code is made available as an R package and can be installed locally with
 
 ```r
-library(devtools)
-install_github("loosolab/wilson", host="github.molgen.mpg.de/api/v3")
+install.packages("BiocManager")
+BiocManager::install("wilson")
 ```
+
+On Windows, make sure that `Rtools` are available. Only versions < 2.3.1.
+
+To enable interactive plot downloads install [Orca](https://github.com/plotly/orca).
 
 ## CLARION input format
 
@@ -39,7 +43,7 @@ CLARION: generiC fiLe formAt foR quantItative cOmparsions of high throughput scr
 
 CLARION is a data format especially developed to be used with WIlsON, which relies on a tab-delimited table with a metadata header to describe the following columns. It is based on the Summarized Experiment format and supports all types of data which can be reduced to features and their annotation (e.g. genes, transcripts, proteins, probes) with assigned numerical values (e.g. count, score, log2foldchange, z-score, p-value). Most result tables derived from RNA-Seq, ChIP/ATAC-Seq, Proteomics, Microarrays, and many other analyses can thus be easily reformatted to become compatible without having to modify the code of WIlsON for each specific experiment.
 
-Please check the following link for details considering the [CLARION format](https://github.molgen.mpg.de/loosolab/wilson-apps/wiki/CLARION-Format/).
+Please check the following link for details considering the [CLARION format](https://github.molgen.mpg.de/loosolab/wilson-apps/wiki/Local-usage%3AInput-format).
 
 ## How to cite
 *Schultheis H, Kuenne C, Preussner J, Wiegandt R, Fust A, Bentsen M, Looso M*. WIlsON: Webbased Interactive Omics VisualizatioN. (2018), doi: https://doi.org/10.1093/bioinformatics/bty711

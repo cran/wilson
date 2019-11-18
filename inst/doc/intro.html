@@ -7,12 +7,13 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="author" content="Hendrik Schultheis" />
 
-<meta name="date" content="2018-09-19" />
+<meta name="date" content="2019-11-18" />
 
 <title>Introduction</title>
 
@@ -205,6 +206,9 @@ code > span.al { color: #ff0000; font-weight: bold; }
 code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61717; background-color: #e3d2d2; } 
 </style>
 
+
+
+
 </head>
 
 <body>
@@ -213,8 +217,8 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 
 <h1 class="title toc-ignore">Introduction</h1>
-<h4 class="author"><em>Hendrik Schultheis</em></h4>
-<h4 class="date"><em>2018-09-19</em></h4>
+<h4 class="author">Hendrik Schultheis</h4>
+<h4 class="date">2019-11-18</h4>
 
 
 
@@ -225,7 +229,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <li>know how to use <a href="https://shiny.rstudio.com/articles/modules.html#using-modules">shiny-modules</a></li>
 <li>have a sufficient dataset in clarion-format
 <ul>
-<li>either by <a href="https://github.molgen.mpg.de/loosolab/wilson-apps/wiki/CLARION-Format/">converting</a> your own data</li>
+<li>either by <a href="https://github.molgen.mpg.de/loosolab/wilson-apps/wiki/Local-usage%3AInput-format/">converting</a> your own data</li>
 <li>or downloading from <a href="https://github.molgen.mpg.de/loosolab/wilson-apps/tree/master/wilson-basic/data/">here</a></li>
 </ul></li>
 </ul>
@@ -279,10 +283,13 @@ server &lt;- function(input, output, session) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)</code></pre>
-<p>The server reacts to user interactions whith the interface. Once started it will first parse the given <a href="https://github.molgen.mpg.de/loosolab/wilson-apps/wiki/CLARION-Format/">clarion</a> file into a clarion object, performing validation steps in the process. Next the server functions of the necessary <a href="https://shiny.rstudio.com/articles/modules.html">modules</a> defined in the UI (notice the matching ids) are loaded. Whereas the filter module bluntly accepts the data object with <code>clarion = data</code> the plot module receives its data via <code>clarion = reactive(filtered_data()$object)</code>. Wrapping in <code>reactive()</code> is due to the fact, that the filtered data object returned from the filter module is in a reactive context which essentially means shiny ‘knows’ when this variable changes. Read more about shiny’s reactivity system <a href="https://shiny.rstudio.com/articles/reactivity-overview.html">here</a>.</p>
+<p>The server reacts to user interactions with the interface. Once started it will first parse the given <a href="https://github.molgen.mpg.de/loosolab/wilson-apps/wiki/CLARION-Format/">clarion</a> file into a clarion object, performing validation steps in the process. Next the server functions of the necessary <a href="https://shiny.rstudio.com/articles/modules.html">modules</a> defined in the UI (notice the matching ids) are loaded. Whereas the filter module bluntly accepts the data object with <code>clarion = data</code> the plot module receives its data via <code>clarion = reactive(filtered_data()$object)</code>. Wrapping in <code>reactive()</code> is due to the fact, that the filtered data object returned from the filter module is in a reactive context which essentially means shiny ‘knows’ when this variable changes. Read more about shiny’s reactivity system <a href="https://shiny.rstudio.com/articles/reactivity-overview.html">here</a>.</p>
 <p>For a more advanced example of a wilson-application see the <a href="https://github.molgen.mpg.de/loosolab/wilson-apps/blob/master/wilson-basic/app.R">wilson-basic app</a> in our <a href="https://github.molgen.mpg.de/loosolab/wilson-apps/">wilson-apps</a> repository.</p>
 </div>
 
+
+
+<!-- code folding -->
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
