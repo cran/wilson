@@ -1,7 +1,7 @@
 Package: wilson
 Type: Package
 Title: Web-Based Interactive Omics Visualization
-Version: 2.3.1
+Version: 2.4.0
 Authors@R: c(
     person("Hendrik", "Schultheis", email = "hendrik.schultheis@mpi-bn.mpg.de", role = c("aut", "cre")),
     person("Jens", "Preussner", email = "jens.preussner@mpi-bn.mpg.de", role = "aut"),
@@ -19,16 +19,16 @@ Imports: shiny, data.table, ggplot2, plotly (> 4.8.0), scales,
         ComplexHeatmap, stats, gplots, reshape, rintrojs, RJSONIO,
         ggrepel (>= 0.6.12), DESeq2, rjson, FactoMineR, factoextra,
         heatmaply (>= 0.14.1), shinycssloaders, log4r, openssl,
-        methods, R6, magrittr, zip
-RoxygenNote: 6.1.1
+        methods, R6, zip, shinyWidgets
+RoxygenNote: 7.1.0
 biocViews:
-Suggests: knitr, rmarkdown, testthat, vdiffr, stringi
+Suggests: knitr, rmarkdown, testthat, stringi, utils
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-11-18 13:44:33 UTC; hschult
+Packaged: 2020-05-26 09:45:47 UTC; hschult
 Author: Hendrik Schultheis [aut, cre],
   Jens Preussner [aut],
   Looso Mario [aut]
 Maintainer: Hendrik Schultheis <hendrik.schultheis@mpi-bn.mpg.de>
 Repository: CRAN
-Date/Publication: 2019-11-18 14:10:02 UTC
+Date/Publication: 2020-05-26 11:10:02 UTC
