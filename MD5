@@ -1,7 +1,7 @@
-825b277ced140abdd1659a9693c9357e *DESCRIPTION
+8c3b5f56813ae1797adbdcf7df7010fb *DESCRIPTION
 ebc09eecb1cd05ca5de49b5222b42048 *LICENSE
 65ea4cbb764f5dd11efa0b2e24cf2e82 *NAMESPACE
-ba65bb3a6df74d16b53992eb28b61ebc *NEWS.md
+7a5b04ff9eeebc2decf4b138cf364268 *NEWS.md
 b299911bf37a774db1fb1e9a089036fa *R/and.R
 858873347aa34791018ed70a9cb4ddbe *R/clarion.R
 48175d218c137bd7d7baa88b78f7ede1 *R/colorPicker.R
@@ -17,15 +17,15 @@ b73c82fc46fca5d76d6dc69938380569 *R/installer.R
 844aeba02aeb3fa1ed1cd26531f8d04b *R/limit.R
 930d6e6506766d3b5490bf2fc61a0a2a *R/marker.R
 5669868b273ee3877962fed4c344401f *R/orNumeric.R
-5d89030740758763f30f757d6568a9d6 *R/orTextual.R
+36182b5c5a6a3e581f686e52d4bad23f *R/orTextual.R
 8acc249c2c3cf4efddd2bd75c783606b *R/parser.R
 cadd08595fb868f3101409e0899a95d9 *R/pca.R
 b4c1b6563afa8ad4732bb7b0915cfe88 *R/release_questions.R
-0d84f5f02561b87cf5fa827671da2dcd *R/scatterPlot.R
+bce765b9500de6d652e7e73ba93e0977 *R/scatterPlot.R
 7364f1f68bfae57b8aeb3d5d6deb5b68 *R/transformation.R
 9069bcd0b3a54d669bd09cabee61b3e3 *R/zzz.R
 fe673ee4dafebb92b2330bba6694a5f7 *README.md
-32fcc0d6cc69cffbdb28b4cb7468d8fa *build/vignette.rds
+0ef8b5ab3a9f2f806e93d350a77d4f40 *build/vignette.rds
 89928628786727f3111de54546a24fd3 *exec/and_example.R
 43aa27072ca3798c3a4d8aab99475f94 *exec/colorPicker_example.R
 fa5ae4202502f838f8463330f4a4e38a *exec/columnSelector_example.R
@@ -43,7 +43,7 @@ ca38cd9a32443e510a9a868cba1ffcb3 *exec/marker_example.R
 5758b7ebbcde47586a872fd7b5493bc9 *exec/transformation_example.R
 ea8eab93de05207476b4c5f91642b478 *inst/doc/intro.R
 692c2e6b99d18e4aa43c40393eedac5f *inst/doc/intro.Rmd
-1175d75f314c73cce87dd6bdae988016 *inst/doc/intro.html
+69b83a173bceaaa82c00c7c4a592d8d0 *inst/doc/intro.html
 9b206a5f5af5e2a59da01f8c1cff8f5d *inst/extdata/parser_MaxQuant_config.json
 47284f4888f76f1997626cb32a806b9a *inst/extdata/tobias_config.json
 7813388621a5f46388e905d210e4d911 *inst/templates/geneView_wilson.Rmd
